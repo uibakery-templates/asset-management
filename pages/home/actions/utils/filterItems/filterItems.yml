@@ -1,0 +1,81 @@
+id: '17297594190740.8577903321822995'
+kind: workflow
+name: filterItems
+nameConfigured: true
+steps:
+  - id: '17297594241650.09886064850326881'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: ./code.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+  - id: '17297611443130.6121241071741419'
+    type: putInStore
+    name: save
+    params:
+      - type: name
+        value: '17297582895150.03315377091399396'
+        valueType: string
+      - type: value
+        value: '{{data}}'
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: producible
+        value: true
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+  - id: '17297611933530.8407008522882544'
+    type: executeAction
+    name: execute
+    params:
+      - type: action
+        value: '17297611553690.1671431950976472'
+        valueType: custom
+      - type: isActionsLibraryCall
+        value: false
+        valueType: custom
+      - type: customParams
+        value: ./execute-customParams.js
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+parentId: '17296834692160.58327547203526'
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.filterItems.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.filterItems.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.filterItems.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+selected: true
+configured: true

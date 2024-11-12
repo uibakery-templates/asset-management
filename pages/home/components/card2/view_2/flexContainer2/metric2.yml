@@ -1,0 +1,100 @@
+id: '17296109650850.8869684076401432'
+definitionId: metric
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 4
+      h: 28
+    flex:
+      alignSelf: auto
+      sizing: shrink-if-needed
+      flexGrow: 0
+      flexShrink: 1
+      flexBasis:
+        customValue: auto
+      order: 0
+      size:
+        widthValue: auto
+        heightValue: 112
+        heightUnit: px
+      grow: '1'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 34
+      w: 24
+      h: 28
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 112
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  data: '{{actions.getAssetTypeDistriution.data[0]}}'
+  name: metric2
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: Most used asset type
+  operation: show_last
+  groupType: not_group
+  showLoading:
+    withData: true
+    dataValue: 'false'
+    value: false
+  containerStyles:
+    withData: false
+    dataValue: |-
+      {
+        padding: 'default',
+        shadow: 'default',
+        border: 'default'
+      }
+    value:
+      padding: none
+      shadow: none
+      border: none
+parentSlotId: '17296109650850.29183948404837134'
+index: 0
+actions: {}
+slots:
+  - id: '17296109650850.3521788968869941'
+    name: metricField
+    children:
+      - id: '17297585587020.3697529844377019'
+        definitionId: atomicNumber
+        parentSlotId: '17296109650850.3521788968869941'
+        styles: {}
+        properties:
+          name: atomicNumber3
+          prop: value
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots: []
+  - id: '17296109650850.8560175357756834'
+    name: additionalField
+    children:
+      - id: '17297585587020.69296254040601'
+        definitionId: atomicString
+        parentSlotId: '17296109650850.8560175357756834'
+        styles: {}
+        properties:
+          name: atomicString3
+          prop: name
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots: []
+  - id: '17296109650850.7149254643451177'
+    name: groupByField
+    children: []

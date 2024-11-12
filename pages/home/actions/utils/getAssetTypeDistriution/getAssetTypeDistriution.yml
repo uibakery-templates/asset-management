@@ -1,0 +1,38 @@
+id: '17296838339730.9614014439447589'
+kind: workflow
+name: getAssetTypeDistriution
+nameConfigured: true
+steps:
+  - id: '17296838379320.8579341085162819'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: ./code.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+parentId: '17296834692160.58327547203526'
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.getAssetTypeDistriution.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.getAssetTypeDistriution.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.getAssetTypeDistriution.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+selected: true
+configured: true

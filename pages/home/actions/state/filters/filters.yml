@@ -1,0 +1,16 @@
+id: '17297651594740.5389265598243649'
+kind: store_item
+name: filters
+nameConfigured: true
+steps: []
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+parentId: '17296829925100.8961011417691027'
+storeItem:
+  value: ''
+  valueType: string
+  initialValue: ''
+  version: 1
+selected: true
+configured: true

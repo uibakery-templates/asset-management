@@ -1,0 +1,98 @@
+id: '17297622585800.3021334279586816'
+kind: workflow
+name: onTableUpdate
+nameConfigured: true
+steps:
+  - id: '17297625526710.12562526465273272'
+    type: putInStore
+    name: save
+    params:
+      - type: name
+        value: '17296829695170.43409728551168025'
+        valueType: string
+      - type: value
+        value: '{{ui.table.value}}'
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: producible
+        value: true
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+  - id: '17297623946050.31371277588148394'
+    type: executeAction
+    name: execute
+    params:
+      - type: action
+        value: '17297595268250.27701245934008223'
+        valueType: custom
+      - type: isActionsLibraryCall
+        value: false
+        valueType: custom
+      - type: customParams
+        value: ./execute-customParams.js
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+  - id: '17297624172130.8310029846731439'
+    type: executeAction
+    name: execute2
+    params:
+      - type: action
+        value: '17297594190740.8577903321822995'
+        valueType: custom
+      - type: isActionsLibraryCall
+        value: false
+        valueType: custom
+      - type: customParams
+        value: ./execute2-customParams.js
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+parentId: '17296874559840.39698328111392134'
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.onTableUpdate.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.onTableUpdate.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.onTableUpdate.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+selected: true
+configured: true

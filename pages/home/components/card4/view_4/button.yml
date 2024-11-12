@@ -1,0 +1,50 @@
+id: '17296872931490.7975084236502474'
+definitionId: button
+parentSlotId: '17296873084270.18319804424551478'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 185
+      w: 24
+      h: 13
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 36
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      id: '17296872931490.7975084236502474'
+      x: 0
+      y: 0
+      w: 10
+      h: 9
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 36
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  name: button
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  text: Add asset
+  margin:
+    value: true
+    dataValue: 4px
+    withData: false
+actions:
+  buttonClick:
+    - action: '17296874645840.930355534003559'
+      paramCode: ''
+      blockPageLoad: false
+      preventDefault: false
+      index: 0
+  init: []
+slots: []

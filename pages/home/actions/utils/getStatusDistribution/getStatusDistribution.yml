@@ -1,0 +1,38 @@
+id: '17296834751160.4291499516939974'
+kind: workflow
+name: getStatusDistribution
+nameConfigured: true
+steps:
+  - id: '17296834779270.08870931791663361'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: ./code.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+parentId: '17296834692160.58327547203526'
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.getStatusDistribution.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.getStatusDistribution.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.getStatusDistribution.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+selected: true
+configured: true

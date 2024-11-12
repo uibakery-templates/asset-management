@@ -1,0 +1,58 @@
+id: '17296084101770.388702729788174'
+definitionId: horizontalMenu
+parentSlotId: '17296083594260.9029575078502048'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 21
+      h: 12
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 36
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      id: '17296084101770.388702729788174'
+      x: 0
+      y: 12
+      w: 16
+      h: 9
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 36
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  autoSyncItems: false
+  name: horizontalMenu
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  items: |
+    [
+      {
+        title: 'Asset Management',
+        link: '/home'
+      },
+      {
+        title: 'Inventory',
+        link: '/inventory'
+      },
+      {
+        title: 'Check In/Out',
+        link: '/check-in-out'
+      },
+      {
+        title: 'Maintenance Requests',
+        link: '/maintenance'
+      }
+    ]
+actions: {}
+slots: []

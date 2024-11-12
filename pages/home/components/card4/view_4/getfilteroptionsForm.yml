@@ -1,0 +1,392 @@
+id: '17296875424870.053576623893332176'
+definitionId: form
+parentSlotId: '17296873084270.18319804424551478'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 126
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 320
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 9
+      w: 24
+      h: 88
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 320
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  dynamicFields:
+    value: []
+    dataValue: |-
+      [
+        {
+          "prop": "id",
+          "type": "number",
+          "primaryKey": true
+        },
+        "name",
+        {
+          "prop": "avatar",
+          "type": "image"
+        },
+        {
+          "prop": "email",
+          "type": "link"
+        }
+      ]
+    withData: false
+  entity: '{{actions.getFilters.data}}'
+  name: getfilteroptionsForm
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: ''
+  columns: '1'
+  showSubmitBtn:
+    value: false
+    dataValue: 'true'
+    withData: false
+  submitOnEnter:
+    value: false
+    dataValue: 'true'
+    withData: false
+  heightMode: fixed
+  showCustomButton:
+    value: false
+    dataValue: 'false'
+    withData: false
+  containerStyles:
+    withData: false
+    dataValue: |-
+      {
+        padding: 'default',
+        shadow: 'default',
+        border: 'default'
+      }
+    value:
+      padding: none
+      shadow: none
+      border: none
+  margin:
+    value: true
+    dataValue: 4px
+    withData: false
+actions:
+  changeEvent:
+    - action: '17297655793590.0506131002135175'
+      paramCode: ''
+      blockPageLoad: false
+      preventDefault: false
+      index: 0
+  init: []
+  submitEvent: []
+  formClick: []
+  customButtonClick: []
+  validate: []
+slots:
+  - id: '17296875424870.5241709843079565'
+    name: structure
+    children:
+      - id: '17296875424870.3001147231906429'
+        definitionId: atomicMultiselect
+        parentSlotId: '17296875424870.5241709843079565'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicMultiselect2
+          prop: assetTypes
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          editModeValue: '{{null}}'
+          title: Asset type
+          options:
+            value:
+              - value: Laptop
+                color: primary
+                __UIBAKERY__SYSTEM_ID__: '17297606259260.4566215207115689'
+              - value: Monitor
+                color: success
+                __UIBAKERY__SYSTEM_ID__: '17297606259260.41522927258154363'
+              - value: Mobile Phone
+                color: warning
+                __UIBAKERY__SYSTEM_ID__: '17297606259260.006749406025915228'
+              - value: Printer
+                color: danger
+                __UIBAKERY__SYSTEM_ID__: '17297606259260.2599005892385451'
+              - value: Networking Device
+                color: info
+                __UIBAKERY__SYSTEM_ID__: '17297606259260.07709936078462398'
+              - value: Tablet
+                color: primary-dark
+                __UIBAKERY__SYSTEM_ID__: '17297606259260.746739498394914'
+              - value: Television
+                color: success-dark
+                __UIBAKERY__SYSTEM_ID__: '17297606259260.46382234719158544'
+              - value: Desktop
+                color: warning-dark
+                __UIBAKERY__SYSTEM_ID__: '17297606259260.15889154431743768'
+              - value: Mouse
+                color: danger-dark
+                __UIBAKERY__SYSTEM_ID__: '17297606259260.3203413542684743'
+            dataValue: '{{value}}'
+            withData: true
+        index: 4
+        slots: []
+      - id: '17296875424870.1395591659769111'
+        definitionId: atomicMultiselect
+        parentSlotId: '17296875424870.5241709843079565'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicMultiselect3
+          prop: locations
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          title: Location
+          options:
+            value:
+              - value: New York Office
+                color: primary
+                __UIBAKERY__SYSTEM_ID__: '17297606550230.3859121134126613'
+              - value: San Francisco Office
+                color: success
+                __UIBAKERY__SYSTEM_ID__: '17297606550230.7392468301861881'
+              - value: London Office
+                color: warning
+                __UIBAKERY__SYSTEM_ID__: '17297606550230.22657846191760633'
+              - value: Berlin Office
+                color: danger
+                __UIBAKERY__SYSTEM_ID__: '17297606550230.16305871983099052'
+              - value: Paris Office
+                color: info
+                __UIBAKERY__SYSTEM_ID__: '17297606550230.3513733494559106'
+              - value: Tokyo Office
+                color: primary-dark
+                __UIBAKERY__SYSTEM_ID__: '17297606550230.7174348569903546'
+            dataValue: '{{value}}'
+            withData: true
+          editModeValue: '{{}}'
+        index: 5
+        slots: []
+      - id: '17296875424870.5737737193905486'
+        definitionId: atomicMultiselect
+        parentSlotId: '17296875424870.5241709843079565'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicMultiselect
+          prop: departments
+          primaryKey: false
+          options:
+            value:
+              - value: IT
+                color: primary
+                __UIBAKERY__SYSTEM_ID__: '17297607503600.9894179091684363'
+              - value: Sales
+                color: success
+                __UIBAKERY__SYSTEM_ID__: '17297607503600.05408785493487178'
+              - value: Marketing
+                color: warning
+                __UIBAKERY__SYSTEM_ID__: '17297607503600.7728810558496553'
+              - value: Admin
+                color: danger
+                __UIBAKERY__SYSTEM_ID__: '17297607503600.3617288566185608'
+              - value: Finance
+                color: info
+                __UIBAKERY__SYSTEM_ID__: '17297607503600.548043260840301'
+              - value: HR
+                color: primary-dark
+                __UIBAKERY__SYSTEM_ID__: '17297607503600.6152754190044036'
+              - value: Development
+                color: success-dark
+                __UIBAKERY__SYSTEM_ID__: '17297607503600.24650182520524422'
+            dataValue: '{{value}}'
+            withData: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          editModeValue: '{{}}'
+          title: Department
+        index: 6
+        slots: []
+      - id: '17296875424870.584870444917321'
+        definitionId: atomicMultiselect
+        parentSlotId: '17296875424870.5241709843079565'
+        styles: {}
+        properties:
+          name: atomicMultiselect4
+          prop: assignedTo
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          title: Assigned to
+          options:
+            value:
+              - value: John Doe
+                color: primary
+                __UIBAKERY__SYSTEM_ID__: '17297607668180.6780224749791293'
+              - value: Jane Smith
+                color: success
+                __UIBAKERY__SYSTEM_ID__: '17297607668180.0401974289911482'
+              - value: Unassigned
+                color: warning
+                __UIBAKERY__SYSTEM_ID__: '17297607668180.02829380375363999'
+              - value: Mark Spencer
+                color: danger
+                __UIBAKERY__SYSTEM_ID__: '17297607668180.6385043477660042'
+              - value: IT Department
+                color: info
+                __UIBAKERY__SYSTEM_ID__: '17297607668180.18625647383593247'
+              - value: Sophia Martin
+                color: primary-dark
+                __UIBAKERY__SYSTEM_ID__: '17297607668180.6052043541375127'
+              - value: Yuki Tanaka
+                color: success-dark
+                __UIBAKERY__SYSTEM_ID__: '17297607668180.5560831106759123'
+              - value: James Lee
+                color: warning-dark
+                __UIBAKERY__SYSTEM_ID__: '17297607668180.8881012163752315'
+              - value: Sarah Johnson
+                color: danger-dark
+                __UIBAKERY__SYSTEM_ID__: '17297607668180.3543097040198069'
+              - value: David Brown
+                color: info-dark
+                __UIBAKERY__SYSTEM_ID__: '17297607668180.755699929132359'
+            dataValue: '{{value}}'
+            withData: true
+          editModeValue: '{{}}'
+        index: 7
+        slots: []
+      - id: '17296879154230.6003568239159576'
+        definitionId: atomicMultiselect
+        parentSlotId: '17296875424870.5241709843079565'
+        styles: {}
+        properties:
+          name: atomicMultiselect
+          prop: conditions
+          primaryKey: false
+          options:
+            value:
+              - value: Good
+                color: primary
+                __UIBAKERY__SYSTEM_ID__: '17297608298230.07715885506922371'
+              - value: Excellent
+                color: success
+                __UIBAKERY__SYSTEM_ID__: '17297608298230.9969795680711648'
+              - value: Fair
+                color: warning
+                __UIBAKERY__SYSTEM_ID__: '17297608298230.8982620451867009'
+            dataValue: '{{value}}'
+            withData: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          title: Condition
+          editModeValue: '{{}}'
+        index: 8
+        slots: []
+      - id: '17296875424870.48976263826667576'
+        definitionId: atomicDateTime
+        parentSlotId: '17296875424870.5241709843079565'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicDateTime
+          prop: purchaseDateRangeEnd
+          primaryKey: false
+          timeFormat:
+            value: ''
+            dataValue: HH:mm
+            withData: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          maxDate: '{{ui.getfilteroptionsForm.value.purchaseDateRangeEnd}}'
+          title: Purchased before
+          editModeValue: '{{}}'
+        index: 0
+        slots: []
+      - id: '17296879165850.5046021340883988'
+        definitionId: atomicDateTime
+        parentSlotId: '17296875424870.5241709843079565'
+        styles: {}
+        properties:
+          name: atomicDateTime
+          prop: purchaseDateRangeStart
+          primaryKey: false
+          timeFormat:
+            value: ''
+            dataValue: HH:mm
+            withData: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          title: Purchased after
+          minDate: '{{ui.getfilteroptionsForm.value.purchaseDateRangeStart}}'
+          editModeValue: '{{}}'
+        index: 1
+        slots: []
+      - id: '17296875424870.4018446545057801'
+        definitionId: atomicDateTime
+        parentSlotId: '17296875424870.5241709843079565'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicDateTime
+          prop: warrantyExpiryRangeLatest
+          primaryKey: false
+          timeFormat:
+            value: ''
+            dataValue: HH:mm
+            withData: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          minDate: ''
+          title: Warranty expires before
+          maxDate: '{{ui.getfilteroptionsForm.value.warrantyExpiryRangeLatest}}'
+          editModeValue: '{{}}'
+        index: 2
+        slots: []
+      - id: '17296884676160.3665342775201792'
+        definitionId: atomicDateTime
+        parentSlotId: '17296875424870.5241709843079565'
+        styles: {}
+        properties:
+          name: atomicDateTime
+          prop: warrantyExpiryRangeEarliest
+          primaryKey: false
+          timeFormat:
+            value: ''
+            dataValue: HH:mm
+            withData: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          title: Warranty expires after
+          minDate: '{{ui.getfilteroptionsForm.value.warrantyExpiryRangeEarliest}}'
+          mappedValue: ''
+          editModeValue: '{{}}'
+        index: 3
+        slots: []

@@ -1,0 +1,70 @@
+id: '17297655793590.0506131002135175'
+kind: workflow
+name: onFilterChange
+nameConfigured: true
+steps:
+  - id: '17297655832350.12527481352645697'
+    type: putInStore
+    name: save
+    params:
+      - type: name
+        value: '17297651594740.5389265598243649'
+        valueType: string
+      - type: value
+        value: '{{data}}'
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: producible
+        value: true
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+  - id: '17297655989810.43994857656083286'
+    type: executeAction
+    name: execute
+    params:
+      - type: action
+        value: '17297594190740.8577903321822995'
+        valueType: custom
+      - type: isActionsLibraryCall
+        value: false
+        valueType: custom
+      - type: customParams
+        value: ./execute-customParams.js
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+parentId: '17296874559840.39698328111392134'
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.onFilterChange.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.onFilterChange.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.onFilterChange.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+selected: true
+configured: true
